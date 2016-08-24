@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="chartist/chartist.min.css">
+		<link rel="stylesheet" href="custom.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default cm-topbar">
+			<div class="container-fluid">
+				<div class="col-md-6">
+					<h3 class="cm-white"><strong>Activity Based Management (ABM)</strong></h3>
+				</div>
+				<div class="col-md-6">
+					<div class="pull-right cm-logout">
+						<button class="btn btn-default cm-white">
+						Logout&nbsp;&nbsp;<span class="glyphicon glyphicon-lock"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="wrapper">
+			<div class="container-fluid">
+				<div class="row cm-greeting-wrapper">
+					<div class="container-fluid">
+						<div class="col-md-6">
+							<div class="cm-greeting">
+								<h3>Good Morning</h3>
+								<h4>15 July 2016</h4>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="pull-right">
+								<div class="cm-time">
+									<img src="clock.png" class="img-responsive" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row cm-main">
+					<div class="col-md-2 cm-left-menu">
+						<div class="cm-menu-content">
+							
+						</div>
+					</div>
+					<div class="col-md-10 cm-main-content">
+						<div class="row">
+							<div class="col-md-12 text-center cm-main-title">
+								<h4><strong>Activity Tagging</strong></h4>
+							</div>
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6">
+										<form class="form-horizontal">
+											<div class="form-group">
+												<label for="" class="col-md-4 control-label">Department :</label>
+												<div class="col-md-8">
+													<select name="" id="dept" class="form-control">
+														<option value="">--SELECT DEPARTMENT--</option>
+														<option value="">Call Centre</option>
+														<option value="">Electronic Banking & Cash Operations - EBD</option>
+														<option value="">IT IS</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group" id="formsection">
+												<label for="" class="col-md-4 control-label">Section :</label>
+												<div class="col-md-8">
+													<select name="" id="sect" class="form-control">
+														<option value="">--SELECT SECTION--</option>
+														<option value="">Central Mailing</option>
+														<option value="">Central Store</option>
+														<option value="">SST Monitoring & Technical</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group" id="formactivity">
+												<label for="" class="col-md-4 control-label">Activity :</label>
+												<div class="col-md-8">
+													<select name="" id="act" class="form-control">
+														<option value="">--SELECT ACTIVITY--</option>
+														<option value="">Auto Mailing</option>
+														<option value="">General Mailing</option>
+														<option value="">Other Activity</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group">
+												<div style="padding-right:3%;">
+													<button class="btn btn-default pull-right" data-toggle="modal" data-target="#tagdetail" type="button">Tag Activity</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="row" style="margin-top:20px;">
+							<div class="col-md-12">
+								<div class="table-responsive cm-main-table">
+									<table class="table table-bordered" id="">
+										<thead>
+											<tr>
+												<th>Department</th>
+												<th>Section</th>
+												<th>Activity</th>
+												<th>Created By</th>
+												<th>Created Date</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Call Centre</td>
+												<td>Central Mailing</td>
+												<td>Other Activity</td>
+												<td>Administrator</td>
+												<td>9:01 PM</td>
+											</tr>
+											<tr>
+												<td>Call Centre</td>
+												<td>Central Mailing</td>
+												<td>Other Activity</td>
+												<td>Administrator</td>
+												<td>9:01 PM</td>
+											</tr>
+											<tr>
+												<td>Call Centre</td>
+												<td>Central Mailing</td>
+												<td>Other Activity</td>
+												<td>Administrator</td>
+												<td>9:01 PM</td>
+											</tr>
+											<tr>
+												<td>Call Centre</td>
+												<td>Central Mailing</td>
+												<td>Other Activity</td>
+												<td>Administrator</td>
+												<td>9:01 PM</td>
+											</tr>
+											<tr>
+												<td>Call Centre</td>
+												<td>Central Mailing</td>
+												<td>Other Activity</td>
+												<td>Administrator</td>
+												<td>9:01 PM</td>
+											</tr>
+											<tr>
+												<td>Call Centre</td>
+												<td>Central Mailing</td>
+												<td>Other Activity</td>
+												<td>Administrator</td>
+												<td>9:01 PM</td>
+											</tr>
+											<tr>
+												<td>Call Centre</td>
+												<td>Central Mailing</td>
+												<td>Other Activity</td>
+												<td>Administrator</td>
+												<td>9:01 PM</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade" tabindex="-1" role="dialog" id="tagdetail">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Activity Summary</h4>
+					</div>
+					<div class="modal-body cm-modal-content">
+						<div class="row">
+							<form action=""class="form-horizontal">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Staff ID :</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">c06789</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Department :</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">Call Centre</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Section :</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">Central Mailing</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Activity :</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">Other Activity</label>
+										</div>
+									</div>
+								</div>
+							</form>
+							
+						</div>
+						
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Tag Activity</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="chartist/chartist.js"></script>
+		<script>
+			$('#formsection').hide();
+			$('#formactivity').hide();
+
+			$('#dept').change(function(){
+				$('#formsection').show();
+			});
+
+			$('#sect').change(function(){
+				$('#formactivity').show();
+			});
+		</script>
+	</body>
+</html>

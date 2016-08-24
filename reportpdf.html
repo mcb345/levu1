@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="chartist/chartist.min.css">
+		<link rel="stylesheet" href="custom.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default cm-topbar">
+			<div class="container-fluid">
+				<div class="col-md-6">
+					<h3 class="cm-white"><strong>Activity Based Management (ABM)</strong></h3>
+				</div>
+				<div class="col-md-6">
+					<div class="pull-right cm-logout">
+						<button class="btn btn-default cm-white">
+						Logout&nbsp;&nbsp;<span class="glyphicon glyphicon-lock"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="wrapper">
+			<div class="container-fluid">
+				<div class="row cm-greeting-wrapper">
+					<div class="container-fluid">
+						<div class="col-md-6">
+							<div class="cm-greeting">
+								<h3>Good Morning</h3>
+								<h4>15 July 2016</h4>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="pull-right">
+								<div class="cm-time">
+									<img src="clock.png" class="img-responsive" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row cm-main">
+					<div class="col-md-2 cm-left-menu">
+						<div class="cm-menu-content">
+							
+						</div>
+					</div>
+					<div class="col-md-10 cm-main-content">
+						<div class="row">
+							<div class="col-md-12 text-center cm-main-title">
+								<h4><strong>Generate Report</strong></h4>
+							</div>
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-12">
+										<form class="form-horizontal">
+											<div class="form-group">
+												<label for="" class="col-md-4 control-label">Select Time :</label>
+												<div class="col-md-2">
+													<input type="date" class="form-control">
+												</div>
+												<div class="col-md-1 text-center" style="padding:0">
+													To
+												</div>
+												<div class="col-md-2">
+													<input type="date" class="form-control" id="dateto">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="" class="col-md-4 control-label">Department :</label>
+												<div class="col-md-5">
+													<select name="" id="dept" class="form-control">
+														<option value="">ALL</option>
+														<option value="">Call Centre</option>
+														<option value="">Electronic Banking & Cash Operations - EBD</option>
+														<option value="">IT IS</option>
+													</select>
+												</div>
+												<div class="col-md-3"></div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-offset-5" style="padding-top:15px">
+													<button class="btn btn-default" data-toggle="modal" data-target="#tagdetail" type="button">Generate Report</button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="chartist/chartist.js"></script>
+		<script>
+			Date.prototype.toDateInputValue = (function() {
+			    var local = new Date(this);
+			    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+			    return local.toJSON().slice(0,10);
+			});
+			$('#dateto').val(new Date().toDateInputValue());
+		</script>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="chartist/chartist.min.css">
+		<link rel="stylesheet" href="custom.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default cm-topbar">
+			<div class="container-fluid">
+				<div class="col-md-6">
+					<h3 class="cm-white"><strong>Activity Based Management (ABM)</strong></h3>
+				</div>
+				<div class="col-md-6">
+					<div class="pull-right cm-logout">
+						<button class="btn btn-default cm-white">
+						Logout&nbsp;&nbsp;<span class="glyphicon glyphicon-lock"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="wrapper">
+			<div class="container-fluid">
+				<div class="row cm-greeting-wrapper">
+					<div class="container-fluid">
+						<div class="col-md-6">
+							<div class="cm-greeting">
+								<h3>Good Morning</h3>
+								<h4>15 July 2016</h4>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="pull-right">
+								<div class="cm-time">
+									<img src="clock.png" class="img-responsive" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row cm-main">
+					<div class="col-md-2 cm-left-menu">
+						<div class="cm-menu-content">
+							<form>
+								<div class="form-group">
+									<label for="">Select Data Frequency</label>
+									<select name="" id="" class="form-control">
+										<option value="">Year to date</option>
+									</select>
+								</div>
+								<div>
+									<label for="">Specify Month Range</label>
+								</div>
+								<div class="form-group text-center">
+									<label for="">From</label>
+									<input type="date" class="form-control">
+								</div>
+								<div class="form-group text-center">
+									<label for="">To</label>
+									<input type="date" class="form-control">
+								</div>
+							</form>
+							
+						</div>
+					</div>
+					<div class="col-md-10 cm-main-content">
+						<div class="row">
+							<div class="col-md-12 text-center cm-main-title">
+								<h4><strong>DPPA - RCS (Total Activity Cost)</strong></h4>
+							</div>
+							<div class="col-md-12">
+								<div class="ct-chart"></div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="chartist/chartist.js"></script>
+		<script>
+			$( "#show-abm" ).click(function() {
+				$( "#abm-table" ).show();
+			});
+
+			new Chartist.Line('.ct-chart', {
+			  labels: ['Feb-16', 'Mar-16', 'Apr-16', 'May-16', 'Jun-16','July-16'],
+			  series: [
+			    [12000, 9000, 7000, 14000, 13000],
+			    
+			  ]
+			}, {
+			  fullWidth: true,
+			  chartPadding: {
+			    right: 40
+			  },
+			  low:0,
+			  high:20000,
+			  divisor:5
+			});
+		</script>
+	</body>
+</html>

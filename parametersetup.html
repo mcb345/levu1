@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="chartist/chartist.min.css">
+		<link rel="stylesheet" href="custom.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default cm-topbar">
+			<div class="container-fluid">
+				<div class="col-md-6">
+					<h3 class="cm-white"><strong>Activity Based Management (ABM)</strong></h3>
+				</div>
+				<div class="col-md-6">
+					<div class="pull-right cm-logout">
+						<button class="btn btn-default cm-white">
+						Logout&nbsp;&nbsp;<span class="glyphicon glyphicon-lock"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="wrapper">
+			<div class="container-fluid">
+				<div class="row cm-greeting-wrapper">
+					<div class="container-fluid">
+						<div class="col-md-6">
+							<div class="cm-greeting">
+								<h3>Good Morning</h3>
+								<h4>15 July 2016</h4>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="pull-right">
+								<div class="cm-time">
+									<img src="clock.png" class="img-responsive" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row cm-main">
+					<div class="col-md-2 cm-left-menu">
+						<div class="cm-menu-content">
+							
+						</div>
+					</div>
+					<div class="col-md-10 cm-main-content">
+						<div class="row">
+							<div class="col-md-12 text-center cm-main-title">
+								<h4><strong>Parameter Setup</strong></h4>
+							</div>
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6">
+										<form class="form-horizontal">
+											<div class="form-group">
+												<label for="" class="col-md-4 control-label">Formula :</label>
+												<div class="col-md-8">
+													<select name="" id="dept" class="form-control">
+														<option value="">--SELECT FORMULA--</option>
+														<option value="">A+B+C</option>
+														<option value="">A*B*C</option>
+														<option value="">NoOp</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="" class="col-md-4 control-label">Supporting Cost :</label>
+												<div class="col-md-8">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="" class="col-md-4 control-label">Business Unit :</label>
+												<div class="col-md-8">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="" class="col-md-4 control-label">Product :</label>
+												<div class="col-md-8">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="form-group">
+												<div style="padding-right:3%;">
+													<button class="btn btn-default pull-right" data-toggle="modal" data-target="#tagdetail" type="button">Save Formula</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="row" style="margin-top:20px;">
+							<div class="col-md-12">
+								<div class="table-responsive cm-main-table">
+									<table class="table table-bordered" id="">
+										<thead>
+											<tr>
+												<th>Product</th>
+												<th>Formula</th>
+												<th>Supporting Cost</th>
+												<th>Business Unit</th>
+												<th>Created By</th>
+												<th>Created Time</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Main Document</td>
+												<td>A*SF+(10%*SC)</td>
+												<td>4,000US$</td>
+												<td>N/A</td>
+												<td>Administrator</td>
+												<td>23 Aug 2016</td>
+											</tr>
+											<tr>
+												<td>Main Document</td>
+												<td>A*SF+(10%*SC)</td>
+												<td>4,000US$</td>
+												<td>N/A</td>
+												<td>Administrator</td>
+												<td>23 Aug 2016</td>
+											</tr>
+											<tr>
+												<td>Main Document</td>
+												<td>A*SF+(10%*SC)</td>
+												<td>4,000US$</td>
+												<td>N/A</td>
+												<td>Administrator</td>
+												<td>23 Aug 2016</td>
+											</tr>
+											<tr>
+												<td>Main Document</td>
+												<td>A*SF+(10%*SC)</td>
+												<td>4,000US$</td>
+												<td>N/A</td>
+												<td>Administrator</td>
+												<td>23 Aug 2016</td>
+											</tr>
+											<tr>
+												<td>Main Document</td>
+												<td>A*SF+(10%*SC)</td>
+												<td>4,000US$</td>
+												<td>N/A</td>
+												<td>Administrator</td>
+												<td>23 Aug 2016</td>
+											</tr>
+											<tr>
+												<td>Main Document</td>
+												<td>A*SF+(10%*SC)</td>
+												<td>4,000US$</td>
+												<td>N/A</td>
+												<td>Administrator</td>
+												<td>23 Aug 2016</td>
+											</tr>
+											<tr>
+												<td>Main Document</td>
+												<td>A*SF+(10%*SC)</td>
+												<td>4,000US$</td>
+												<td>N/A</td>
+												<td>Administrator</td>
+												<td>23 Aug 2016</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade" tabindex="-1" role="dialog" id="tagdetail">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Formula Setup Summary</h4>
+					</div>
+					<div class="modal-body cm-modal-content">
+						<div class="row">
+							<form action=""class="form-horizontal">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Formula</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">A*SF+(10%*SC)</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Supporting Cost :</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">4,000US$</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Business Unit :</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">N/A</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Product</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">Main Document</label>
+										</div>
+									</div>
+								</div>
+							</form>
+							
+						</div>
+						
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save Formula</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="chartist/chartist.js"></script>
+	</body>
+</html>
