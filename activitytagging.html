@@ -79,6 +79,17 @@
 													</select>
 												</div>
 											</div>
+											<div class="form-group" id="formacttype">
+												<label for="" class="col-md-4 control-label">Activity Type :</label>
+												<div class="col-md-8">
+													<select name="" id="acttype" class="form-control">
+														<option value="">--SELECT ACTIVITY TYPE--</option>
+														<option value="">Central Mailing</option>
+														<option value="">Central Store</option>
+														<option value="">SST Monitoring & Technical</option>
+													</select>
+												</div>
+											</div>
 											<div class="form-group" id="formactivity">
 												<label for="" class="col-md-4 control-label">Activity :</label>
 												<div class="col-md-8">
@@ -87,6 +98,15 @@
 														<option value="">Auto Mailing</option>
 														<option value="">General Mailing</option>
 														<option value="">Other Activity</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group" id="formstatus">
+												<label for="" class="col-md-4 control-label">Status :</label>
+												<div class="col-md-8">
+													<select name="" id="status" class="form-control">
+														<option value="">Active</option>
+														<option value="">Inactive</option>
 													</select>
 												</div>
 											</div>
@@ -109,15 +129,17 @@
 											<tr>
 												<th>Department</th>
 												<th>Section</th>
+												<th>Activity Type</th>
 												<th>Activity</th>
-												<th>Created By</th>
-												<th>Created Date</th>
+												<th>Updated By</th>
+												<th>Updated Date</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td>Call Centre</td>
 												<td>Central Mailing</td>
+												<td>Mailing Service</td>
 												<td>Other Activity</td>
 												<td>Administrator</td>
 												<td>9:01 PM</td>
@@ -125,6 +147,7 @@
 											<tr>
 												<td>Call Centre</td>
 												<td>Central Mailing</td>
+												<td>Mailing Service</td>
 												<td>Other Activity</td>
 												<td>Administrator</td>
 												<td>9:01 PM</td>
@@ -132,6 +155,7 @@
 											<tr>
 												<td>Call Centre</td>
 												<td>Central Mailing</td>
+												<td>Mailing Service</td>
 												<td>Other Activity</td>
 												<td>Administrator</td>
 												<td>9:01 PM</td>
@@ -139,6 +163,7 @@
 											<tr>
 												<td>Call Centre</td>
 												<td>Central Mailing</td>
+												<td>Mailing Service</td>
 												<td>Other Activity</td>
 												<td>Administrator</td>
 												<td>9:01 PM</td>
@@ -146,6 +171,7 @@
 											<tr>
 												<td>Call Centre</td>
 												<td>Central Mailing</td>
+												<td>Mailing Service</td>
 												<td>Other Activity</td>
 												<td>Administrator</td>
 												<td>9:01 PM</td>
@@ -153,6 +179,7 @@
 											<tr>
 												<td>Call Centre</td>
 												<td>Central Mailing</td>
+												<td>Mailing Service</td>
 												<td>Other Activity</td>
 												<td>Administrator</td>
 												<td>9:01 PM</td>
@@ -160,6 +187,7 @@
 											<tr>
 												<td>Call Centre</td>
 												<td>Central Mailing</td>
+												<td>Mailing Service</td>
 												<td>Other Activity</td>
 												<td>Administrator</td>
 												<td>9:01 PM</td>
@@ -167,6 +195,9 @@
 										</tbody>
 									</table>
 								</div>
+							</div>
+							<div class="col-md-12 pull-right">
+								<button class="btn btn-primary pull-right" type="button" data-target="#updetail" data-toggle="modal">Export to CSV</button>
 							</div>
 						</div>
 					</div>
@@ -228,12 +259,17 @@
 		<script>
 			$('#formsection').hide();
 			$('#formactivity').hide();
+			$('#formacttype').hide();
 
 			$('#dept').change(function(){
 				$('#formsection').show();
 			});
 
 			$('#sect').change(function(){
+				$('#formacttype').show();
+			});
+
+			$('#acttype').change(function(){
 				$('#formactivity').show();
 			});
 		</script>
