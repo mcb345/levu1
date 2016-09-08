@@ -119,7 +119,26 @@
 									</div>
 								</div>
 							</div>
-							
+							<div class="col-md-12">
+								<div class="col-md-4 pull-right">
+									<div class="form-group">
+										<div class="input-group my-group">
+											<input type="text" class="form-control" id="alike" placeholder="Search...">
+											<select class="form-control" id="searchby">
+												<option value="">Department</option>
+												<option value="">Section</option>
+												<option value="">Activity Type</option>
+												<option value="">Activity</option>
+											</select>
+											<span class="input-group-btn">
+												<button class="btn btn-default" type="submit" id="">
+												<span class="glyphicon glyphicon-search"></span>
+												</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="row" style="margin-top:20px;">
 							<div class="col-md-12">
@@ -235,6 +254,12 @@
 										</div>
 									</div>
 									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Activity Type :</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">Mailing Stuff</label>
+										</div>
+									</div>
+									<div class="form-group">
 										<label for="" class="col-md-4 control-label">Activity :</label>
 										<div class="col-md-8">
 											<label for="" class="control-label">Other Activity</label>
@@ -260,15 +285,12 @@
 			$('#formsection').hide();
 			$('#formactivity').hide();
 			$('#formacttype').hide();
-
 			$('#dept').change(function(){
 				$('#formsection').show();
 			});
-
 			$('#sect').change(function(){
 				$('#formacttype').show();
 			});
-
 			$('#acttype').change(function(){
 				$('#formactivity').show();
 			});
