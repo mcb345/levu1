@@ -11,7 +11,7 @@
 		<nav class="navbar navbar-default cm-topbar">
 			<div class="container-fluid">
 				<div class="col-md-6">
-					<h3 class="cm-white"><strong>Activity Based Management (ABM)</strong></h3>
+					<h3 class="cm-white"><strong>&nbsp;</strong></h3>
 				</div>
 				<div class="col-md-6">
 					<div class="pull-right cm-logout">
@@ -51,44 +51,30 @@
 					<div class="col-md-10 cm-main-content">
 						<div class="row">
 							<div class="col-md-12 text-center cm-main-title">
-								<h4><strong>Parameter Setup</strong></h4>
+								<h4><strong>Cost Center Maintenance</strong></h4>
 							</div>
 							<div class="col-md-12">
 								<div class="row">
 									<div class="col-md-6">
 										<form class="form-horizontal">
 											<div class="form-group">
-												<label for="" class="col-md-4 control-label">Formula :</label>
+												<label for="" class="col-md-4 control-label">Name :</label>
 												<div class="col-md-8">
-													<select name="" id="dept" class="form-control">
-														<option value="">--SELECT FORMULA--</option>
-														<option value="">A+B+C</option>
-														<option value="">A*B*C</option>
-														<option value="">NoOp</option>
+													<input type="text" class="form-control" id="name">
+												</div>
+											</div>
+											<div class="form-group" id="formstatus">
+												<label for="" class="col-md-4 control-label">Status :</label>
+												<div class="col-md-8">
+													<select name="" id="status" class="form-control">
+														<option value="">Active</option>
+														<option value="">Inactive</option>
 													</select>
 												</div>
 											</div>
 											<div class="form-group">
-												<label for="" class="col-md-4 control-label">Supporting Cost :</label>
-												<div class="col-md-8">
-													<input type="text" class="form-control">
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="" class="col-md-4 control-label">Business Unit :</label>
-												<div class="col-md-8">
-													<input type="text" class="form-control">
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="" class="col-md-4 control-label">Product :</label>
-												<div class="col-md-8">
-													<input type="text" class="form-control">
-												</div>
-											</div>
-											<div class="form-group">
 												<div style="padding-right:3%;">
-													<button class="btn btn-default pull-right" data-toggle="modal" data-target="#tagdetail" type="button">Save Formula</button>
+													<button class="btn btn-default pull-right" data-toggle="modal" data-target="#tagdetail" type="button">Save</button>
 												</div>
 											</div>
 										</form>
@@ -100,8 +86,8 @@
 									<div class="form-group">
 										<div class="input-group my-group">
 											<input type="text" class="form-control" id="alike" placeholder="Search...">
-											<select class="form-control" id="searchby" readonly="readonly">
-												<option value="">Product</option>
+											<select class="form-control" id="searchby">
+												<option value="">Name</option>
 											</select>
 											<span class="input-group-btn">
 												<button class="btn btn-default" type="submit" id="">
@@ -119,75 +105,62 @@
 									<table class="table table-bordered" id="">
 										<thead>
 											<tr>
-												<th>Product</th>
-												<th>Formula</th>
-												<th>Supporting Cost</th>
-												<th>Business Unit</th>
-												<th>Created By</th>
-												<th>Created Time</th>
+												<th>Name</th>
+												<th>Updated By</th>
+												<th>Updated Time</th>
+												<th></th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>Main Document</td>
-												<td>A*SF+(10%*SC)</td>
-												<td>4,000US$</td>
-												<td>N/A</td>
+												<td>Human Resource</td>
 												<td>Administrator</td>
-												<td>23 Aug 2016</td>
+												<td>15 Sept 2016</td>
+												<td><a href="#" id="editfirst">Edit</a></td>
 											</tr>
 											<tr>
-												<td>Main Document</td>
-												<td>A*SF+(10%*SC)</td>
-												<td>4,000US$</td>
-												<td>N/A</td>
+												<td>Human Resource</td>
 												<td>Administrator</td>
-												<td>23 Aug 2016</td>
+												<td>15 Sept 2016</td>
+												<td><a href="#" id="">Edit</a></td>
 											</tr>
 											<tr>
-												<td>Main Document</td>
-												<td>A*SF+(10%*SC)</td>
-												<td>4,000US$</td>
-												<td>N/A</td>
+												<td>Human Resource</td>
 												<td>Administrator</td>
-												<td>23 Aug 2016</td>
+												<td>15 Sept 2016</td>
+												<td><a href="#" id="">Edit</a></td>
 											</tr>
 											<tr>
-												<td>Main Document</td>
-												<td>A*SF+(10%*SC)</td>
-												<td>4,000US$</td>
-												<td>N/A</td>
+												<td>Human Resource</td>
 												<td>Administrator</td>
-												<td>23 Aug 2016</td>
+												<td>15 Sept 2016</td>
+												<td><a href="#" id="">Edit</a></td>
 											</tr>
 											<tr>
-												<td>Main Document</td>
-												<td>A*SF+(10%*SC)</td>
-												<td>4,000US$</td>
-												<td>N/A</td>
+												<td>Human Resource</td>
 												<td>Administrator</td>
-												<td>23 Aug 2016</td>
+												<td>15 Sept 2016</td>
+												<td><a href="#" id="">Edit</a></td>
 											</tr>
 											<tr>
-												<td>Main Document</td>
-												<td>A*SF+(10%*SC)</td>
-												<td>4,000US$</td>
-												<td>N/A</td>
+												<td>Human Resource</td>
 												<td>Administrator</td>
-												<td>23 Aug 2016</td>
+												<td>15 Sept 2016</td>
+												<td><a href="#" id="">Edit</a></td>
 											</tr>
 											<tr>
-												<td>Main Document</td>
-												<td>A*SF+(10%*SC)</td>
-												<td>4,000US$</td>
-												<td>N/A</td>
+												<td>Human Resource</td>
 												<td>Administrator</td>
-												<td>23 Aug 2016</td>
+												<td>15 Sept 2016</td>
+												<td><a href="#" id="">Edit</a></td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
 							</div>
+							<!-- <div class="col-md-12 pull-right">
+								<button class="btn btn-primary pull-right" type="button" data-target="#updetail" data-toggle="modal">Export to CSV</button>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -199,34 +172,22 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title">Formula Setup Summary</h4>
+						<h4 class="modal-title">Activity Summary</h4>
 					</div>
 					<div class="modal-body cm-modal-content">
 						<div class="row">
 							<form action=""class="form-horizontal">
 								<div class="col-md-12">
 									<div class="form-group">
-										<label for="" class="col-md-4 control-label">Formula</label>
+										<label for="" class="col-md-4 control-label">Name :</label>
 										<div class="col-md-8">
-											<label for="" class="control-label">A*SF+(10%*SC)</label>
+											<label for="" class="control-label">Human Resource</label>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="" class="col-md-4 control-label">Supporting Cost :</label>
+										<label for="" class="col-md-4 control-label">Value :</label>
 										<div class="col-md-8">
-											<label for="" class="control-label">4,000US$</label>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="" class="col-md-4 control-label">Business Unit :</label>
-										<div class="col-md-8">
-											<label for="" class="control-label">N/A</label>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="" class="col-md-4 control-label">Product</label>
-										<div class="col-md-8">
-											<label for="" class="control-label">Main Document</label>
+											<label for="" class="control-label">$5,500</label>
 										</div>
 									</div>
 								</div>
@@ -236,7 +197,7 @@
 						
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save Formula</button>
+							<button type="button" class="btn btn-primary">Save</button>
 						</div>
 					</div>
 				</div>
@@ -245,5 +206,11 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="chartist/chartist.js"></script>
+		<script>
+			$('#editfirst').on('click', function() {
+				$('#name').val('Human Resource');
+				$('#value').val('5500');
+			});
+		</script>
 	</body>
 </html>

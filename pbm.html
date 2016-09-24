@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="simple-sidebar.css">
+		<link rel="stylesheet" href="custom.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default cm-topbar">
+			<div class="container-fluid">
+				<div class="col-md-6">
+					<h3 class="cm-white"><strong>Product Based Management (ABM)</strong></h3>
+				</div>
+				<div class="col-md-6">
+					<div class="pull-right cm-logout">
+						<button class="btn btn-default cm-white">
+						Logout&nbsp;&nbsp;<span class="glyphicon glyphicon-lock"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="wrapper">
+			<div class="container-fluid">
+				<div class="row cm-greeting-wrapper">
+					<div class="container-fluid">
+						<div class="col-md-6">
+							<div class="cm-greeting">
+								<h3>Good Morning</h3>
+								<h4>15 July 2016</h4>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="pull-right">
+								<div class="cm-time">
+									<img src="clock.png" class="img-responsive" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row cm-main">
+					<div class="col-md-2 cm-left-menu">
+						<div class="cm-menu-content">
+							<form>
+								<div class="form-group">
+									<select name="" id="" class="form-control">
+										<option value="">Month</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<select name="" id="" class="form-control">
+										<option value="">Select Market</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<select name="" id="" class="form-control">
+										<option value="">Select Department</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<select name="" id="" class="form-control">
+										<option value="">Select Product</option>
+									</select>
+								</div>
+								<div class="form-group" class="form-control">
+									<button class="btn btn-default pull-right" id="show-abm" type="button"><strong>Go</strong></button>
+								</div>
+								
+							</form>
+							
+						</div>
+					</div>
+					<div class="col-md-10 cm-main-content">
+						<div class="row">
+							<div class="cm-sort">
+								<form>
+									<div class="col-md-4">
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">View</button>
+												</span>
+												<select class="form-control" name="" id="">
+													<option value="">Sort By</option>
+													<option value="">Product Unit Cost</option>
+													<option value="">Total Product Cost</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">View</button>
+												</span>
+												<select class="form-control" name="" id="">
+													<option value="">Select Hierarchy</option>
+													<option value="">Highest Lowest</option>
+													<option value="">Lowest Highest</option>
+													<option value="">All</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">View</button>
+												</span>
+												<select class="form-control" name="" id="">
+													<option value="">List of Report</option>
+													<option value="">Top 10</option>
+													<option value="">Top 20</option>
+													<option value="">Top 30</option>
+													<option value="">All</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-11">
+								<div class="cm-main-table table-responsive">
+									<table class="table table-bordered" id="abm-table">
+										<thead>
+											<tr>
+												<th>Product</th>
+												<th>PROCESS COST</th>
+												<th>BUSINESS VOLUME</th>
+												<th>Trend View</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>DPPA-RCS</td>
+												<td>18.63</td>
+												<td>11,997.54</td>
+												<td class="text-center"><button class="btn btn-default btn-circle" id="trend"><span class="glyphicon glyphicon-signal"></span></button></td>
+											</tr>
+											<tr>
+												<td>DPPA-RCS</td>
+												<td>18.63</td>
+												<td>11,997.54</td>
+												<td class="text-center"><button class="btn btn-default btn-circle"><span class="glyphicon glyphicon-signal"></span></button></td>
+											</tr>
+											<tr>
+												<td>DPPA-RCS</td>
+												<td>18.63</td>
+												<td>11,997.54</td>
+												<td class="text-center"><button class="btn btn-default btn-circle"><span class="glyphicon glyphicon-signal"></span></button></td>
+											</tr>
+											<tr>
+												<td>DPPA-RCS</td>
+												<td>18.63</td>
+												<td>11,997.54</td>
+												<td class="text-center"><button class="btn btn-default btn-circle"><span class="glyphicon glyphicon-signal"></span></button></td>
+											</tr>
+											<tr>
+												<td>DPPA-RCS</td>
+												<td>18.63</td>
+												<td>11,997.54</td>
+												<td class="text-center"><button class="btn btn-default btn-circle"><span class="glyphicon glyphicon-signal"></span></button></td>
+											</tr>
+											<tr>
+												<td>DPPA-RCS</td>
+												<td>18.63</td>
+												<td>11,997.54</td>
+												<td class="text-center"><button class="btn btn-default btn-circle"><span class="glyphicon glyphicon-signal"></span></button></td>
+											</tr>
+											<tr>
+												<td>DPPA-RCS</td>
+												<td>18.63</td>
+												<td>11,997.54</td>
+												<td class="text-center"><button class="btn btn-default btn-circle"><span class="glyphicon glyphicon-signal"></span></button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-1" id="upload">
+								<form>
+									<div class="form-group">
+										<label class="btn btn-default btn-file">
+											<span class="glyphicon glyphicon-list"></span> <input type="file" style="display: none;">
+										</label>
+									</div>
+								</form>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			$('#abm-table').hide();
+			$( "#show-abm" ).click(function() {
+				$( "#abm-table" ).show();
+			});
+			$( "#trend" ).click(function() {
+				window.location.href = "trend.html";
+			});
+		</script>
+	</body>
+</html>
