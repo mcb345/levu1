@@ -68,6 +68,17 @@
 													</select>
 												</div>
 											</div>
+											<div class="form-group" id="formsect">
+												<label for="" class="col-md-4 control-label">Section :</label>
+												<div class="col-md-8">
+													<select name="" id="sect" class="form-control">
+														<option value="">--SELECT SECTION--</option>
+														<option value="">Call Centre</option>
+														<option value="">Electronic Banking & Cash Operations - EBD</option>
+														<option value="">IT IS</option>
+													</select>
+												</div>
+											</div>
 											<div class="form-group" id="formaa">
 												<label for="" class="col-md-4 control-label">Activity :</label>
 												<div class="col-md-8">
@@ -191,8 +202,8 @@
 										<thead>
 											<tr>
 												<th>Department</th>
-												<th>ABC Activity</th>
-												<th>Levu Activity</th>
+												<th>Section</th>
+												<th>Activity</th>
 												<th>Cost Center</th>
 												<th>Business Unit</th>
 												<th>Product</th>
@@ -246,7 +257,8 @@
 								</div>
 							</div>
 							<div class="col-md-12 pull-right">
-								<button class="btn btn-primary pull-right" type="button" data-target="#updetail" data-toggle="modal">Export to CSV</button>
+								<button class="btn btn-default pull-right" type="button" data-target="#updetail" data-toggle="modal">Export for Supporting Cost</button>
+								<button class="btn btn-primary pull-right" type="button" data-target="#updetail" data-toggle="modal">Export for Business Volume</button>
 							</div>
 						</div>
 					</div>
@@ -277,6 +289,12 @@
 											<label for="" class="control-label">US$ 500,000</label>
 										</div>
 									</div> -->
+									<div class="form-group">
+										<label for="" class="col-md-4 control-label">Section :</label>
+										<div class="col-md-8">
+											<label for="" class="control-label">Central Mailing</label>
+										</div>
+									</div>
 									<div class="form-group">
 										<label for="" class="col-md-4 control-label">Activity :</label>
 										<div class="col-md-8">
@@ -320,8 +338,12 @@
 		<script src="chartist/chartist.js"></script>
 		<script>
 			$('#formaa').hide();
+			$('#formsect').hide();
 			// $('#formacttype').hide();
 			$('#dept').change(function(){
+				$('#formsect').show();
+			});
+			$('#sect').change(function(){
 				$('#formaa').show();
 			});
 			
